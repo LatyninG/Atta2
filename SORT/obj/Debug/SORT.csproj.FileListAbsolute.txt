@@ -1,0 +1,5 @@
+E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.csprojResolveAssemblyReference.cache
+E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.Form1.resources
+E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.Properties.Resources.resources
+E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.csproj.GenerateResource.cache
+E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.csproj.CoreCompileInputs.cache
