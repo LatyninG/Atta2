@@ -3,3 +3,15 @@ E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.Form1.resources
 E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.Properties.Resources.resources
 E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.csproj.GenerateResource.cache
 E:\Progi\АиСД\Atta_2\SORT\obj\Debug\SORT.csproj.CoreCompileInputs.cache
+Z:\dev\OutSource\Gena\Atta2\SORT\bin\Debug\SORT.exe.config
+Z:\dev\OutSource\Gena\Atta2\SORT\bin\Debug\SORT.exe
+Z:\dev\OutSource\Gena\Atta2\SORT\bin\Debug\SORT.pdb
+Z:\dev\OutSource\Gena\Atta2\SORT\bin\Debug\BL.dll
+Z:\dev\OutSource\Gena\Atta2\SORT\bin\Debug\BL.pdb
+Z:\dev\OutSource\Gena\Atta2\SORT\obj\Debug\SORT.csprojResolveAssemblyReference.cache
+Z:\dev\OutSource\Gena\Atta2\SORT\obj\Debug\SORT.Form1.resources
+Z:\dev\OutSource\Gena\Atta2\SORT\obj\Debug\SORT.Properties.Resources.resources
+Z:\dev\OutSource\Gena\Atta2\SORT\obj\Debug\SORT.csproj.GenerateResource.Cache
+Z:\dev\OutSource\Gena\Atta2\SORT\obj\Debug\SORT.csproj.CoreCompileInputs.cache
+Z:\dev\OutSource\Gena\Atta2\SORT\obj\Debug\SORT.exe
+Z:\dev\OutSource\Gena\Atta2\SORT\obj\Debug\SORT.pdb
