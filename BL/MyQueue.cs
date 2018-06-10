@@ -66,7 +66,7 @@ namespace BL
             Node p = head;
             while (p != null)
             {
-                Array.Resize(ref st, ++L);
+                Array.Resize<string>(ref st, ++L);
                 st[L - 1] = p.inf.ToString();
                 p = p.next;
             }

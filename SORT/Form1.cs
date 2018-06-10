@@ -32,7 +32,7 @@ namespace SORT
                 MessageBoxUtils mbu = new MessageBoxUtils();
                 int arraysize = mbu.DialogBox("Enter size of the array ", "Data input");
                 if (arraysize == 0)
-                    throw new Exception(); 
+                    throw new Exception();
                 ArrayUtils rr = new ArrayUtils(arraysize);
                 int[] array = rr.ArrayCreater();
                 ArrToDGV(array, DGV);

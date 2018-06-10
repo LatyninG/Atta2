@@ -43,9 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayUtils.cs" />
+    <Compile Include="DrawConfig.cs" />
     <Compile Include="MessageBoxUtils.cs" />
     <Compile Include="MyQueue.cs" />
+    <Compile Include="MyTree.cs" />
     <Compile Include="Node.cs" />
+    <Compile Include="NodeTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderer.cs" />
     <Compile Include="SortBL.cs" />

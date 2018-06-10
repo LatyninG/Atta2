@@ -10,9 +10,3 @@ D:\Progi\АиСД\Atta_2\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 D:\Progi\АиСД\Atta_2\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
 D:\Progi\АиСД\Atta_2\BL\obj\Debug\BL.dll
 D:\Progi\АиСД\Atta_2\BL\obj\Debug\BL.pdb
-Z:\dev\OutSource\Gena\Atta2\BL\bin\Debug\BL.dll
-Z:\dev\OutSource\Gena\Atta2\BL\bin\Debug\BL.pdb
-Z:\dev\OutSource\Gena\Atta2\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
-Z:\dev\OutSource\Gena\Atta2\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
-Z:\dev\OutSource\Gena\Atta2\BL\obj\Debug\BL.dll
-Z:\dev\OutSource\Gena\Atta2\BL\obj\Debug\BL.pdb
