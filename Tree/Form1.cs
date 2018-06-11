@@ -14,6 +14,8 @@ namespace Tree
 {
     public partial class Form1 : Form
     {
+        /* Подсчитать число узлов на k-ом уровне заданного двоичного дерева (корень считать узлом 1-ого уровня) */
+
         public Form1()
         {
             InitializeComponent();
