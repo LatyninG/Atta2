@@ -14,6 +14,10 @@ namespace SORT
 {
     public partial class Form1 : Form
     {
+        /* Написать программу, которая наглядно иллюстрирует работу следующих методов сортировки: 1) Пузырьковая; 2) Шелла.
+        Провести сравнение этих сортировок по количеству сравнений, по количеству обменов.
+        Для этого построить графики зависимостей данных величин от количества элементов массив*/
+
         int[] draw_Arr;
 
         DoubleLinkedListNode<Bitmap> _currentFrame;
@@ -94,6 +98,10 @@ namespace SORT
                 ClearDGV(DGV);
                 ArrToDGV(arr, DGV);
             }
+            else
+            {
+                MessageBox.Show("Выберите вид сортировки");
+            }
         }
 
         private void SravBTN_Click(object sender, EventArgs e)
@@ -137,6 +145,10 @@ namespace SORT
                     graphicCH.Series[0].Points.AddXY(i, sort.ReturnSrav());
                 }
             }
+            else
+            {
+                MessageBox.Show("Выберите тип графика для построения.");
+            }
         }
 
         private void DemonstrateBTN_Click(object sender, EventArgs e)
@@ -178,6 +190,10 @@ namespace SORT
                     }
 
                     ArrToDGV(demonstrate_Arr, DGV);
+                }
+                else
+                {
+                    MessageBox.Show("Выберите вид сортировки.");
                 }
             }
             catch (Exception ex)
