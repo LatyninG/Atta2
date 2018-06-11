@@ -92,7 +92,7 @@ namespace SORT
                 ClearDGV(DGV);
                 ArrToDGV(arr,DGV);
             }
-            if (BubleRBTN.Checked)
+            else if (BubleRBTN.Checked)
             {
                 sort.BubleSort();
                 ClearDGV(DGV);
@@ -130,7 +130,7 @@ namespace SORT
                     graphicCH.Series[0].Points.AddXY(i, sort.ReturnObm());
                 }
             }
-            if (KSravRBTN.Checked)
+            else if (KSravRBTN.Checked)
             {
                 graphicCH.Series[0].Points.Clear();
                 graphicCH.Series[1].Points.Clear();
@@ -173,7 +173,7 @@ namespace SORT
 
                     ArrToDGV(demonstrate_Arr, DGV);
                 }
-                if (BubleRBTN.Checked)
+                else if (BubleRBTN.Checked)
                 {
                     int[] demonstrate_Arr = draw_Arr;
 
