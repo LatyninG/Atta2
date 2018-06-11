@@ -13,6 +13,8 @@ namespace SORT
 {
     public partial class Form1 : Form
     {
+        int[] draw_Arr;
+
         public Form1()
         {
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace SORT
                     throw new Exception();
                 ArrayUtils rr = new ArrayUtils(arraysize);
                 int[] array = rr.ArrayCreater();
+                draw_Arr = array;
                 ArrToDGV(array, DGV);
             }
             catch (Exception)
@@ -105,10 +108,10 @@ namespace SORT
             {
                 graphicCH.Series[0].Points.Clear();
                 graphicCH.Series[1].Points.Clear();
-                int[] arr = DGVToArr(DGV);
-                for (int i = 0; i < arr.Length; i++)
+ //               int[] arr = DGVToArr(DGV);
+                for (int i = 0; i < draw_Arr.Length; i++)
                 {
-                    int[] tempArr = arr.Take(i).ToArray();
+                    int[] tempArr = draw_Arr.Take(i).ToArray();
                     SortBL sort = new SortBL(tempArr.Length, tempArr);
                     sort.SortShell();
                     graphicCH.Series[1].Points.AddXY(i, sort.ReturnObm());

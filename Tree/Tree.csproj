@@ -83,6 +83,10 @@
       <Project>{d78d4b7d-b6b6-4e0d-a5ec-993f44dc56d9}</Project>
       <Name>BL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DrawingTree\DrawingTree.csproj">
+      <Project>{c270986b-9359-41c1-b50f-fa3b6ed74c33}</Project>
+      <Name>DrawingTree</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

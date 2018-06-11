@@ -37,7 +37,7 @@ namespace BL
                         {
                             int t = Arr[i]; Arr[i] = Arr[i + d]; Arr[i + d] = t;
                             Ok = true;
-                            Count_obm+=3;
+                            Count_obm ++;
                         }
                         Count_srav++;
                     }
@@ -68,6 +68,7 @@ namespace BL
                         cnt[j] = cnt[j] + 1;
                     }
                     Count_srav++;
+                    Count_obm++;
                 }
             }
             for (int i = 0; i < N; i++)

@@ -37,7 +37,7 @@ namespace BL
             p.right = GenerateTheSubTree(level - 1, chance, n);
             return p;
         }
-        private void DrawSubTree(NodeTree p, int L, int R, int y, int dy, Graphics g, DrawConfig dc)
+     /*   private void DrawSubTree(NodeTree p, int L, int R, int y, int dy, Graphics g, DrawConfig dc)
         {
             int r = 20;
             if (p == null) return;
@@ -67,7 +67,7 @@ namespace BL
             Graphics g = Graphics.FromImage(bitmap);
             DrawSubTree(p, L, R, y, dy, g, dc);
             return bitmap;
-        }
+        } */
         private int CountSubTree(NodeTree p, int n, int k)
         {
             counter = 0;

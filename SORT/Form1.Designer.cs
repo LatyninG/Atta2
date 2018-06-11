@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.DGV = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.graphicCH = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.drawingPanel = new System.Windows.Forms.Panel();
-            this.graphicCH = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.ClearBTN = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ShellRBTN = new System.Windows.Forms.RadioButton();
-            this.MoveRBTN = new System.Windows.Forms.RadioButton();
-            this.SortBTN = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.KObmenRBTN = new System.Windows.Forms.RadioButton();
-            this.KSravRBTN = new System.Windows.Forms.RadioButton();
-            this.SravBTN = new System.Windows.Forms.Button();
             this.DemonstrateBTN = new System.Windows.Forms.Button();
+            this.SortBTN = new System.Windows.Forms.Button();
+            this.MoveRBTN = new System.Windows.Forms.RadioButton();
+            this.ShellRBTN = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.SravBTN = new System.Windows.Forms.Button();
+            this.KSravRBTN = new System.Windows.Forms.RadioButton();
+            this.KObmenRBTN = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.graphicCH)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -114,6 +114,31 @@
             this.tabPage1.Text = "Сравнение";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // graphicCH
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.graphicCH.ChartAreas.Add(chartArea1);
+            this.graphicCH.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.graphicCH.Legends.Add(legend1);
+            this.graphicCH.Location = new System.Drawing.Point(3, 3);
+            this.graphicCH.Name = "graphicCH";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Сортировка подсчетом";
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.LegendText = "Сортировка Шелла";
+            series2.Name = "Series2";
+            this.graphicCH.Series.Add(series1);
+            this.graphicCH.Series.Add(series2);
+            this.graphicCH.Size = new System.Drawing.Size(635, 446);
+            this.graphicCH.TabIndex = 0;
+            this.graphicCH.Text = "chart1";
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.drawingPanel);
@@ -132,31 +157,6 @@
             this.drawingPanel.Name = "drawingPanel";
             this.drawingPanel.Size = new System.Drawing.Size(635, 446);
             this.drawingPanel.TabIndex = 0;
-            // 
-            // graphicCH
-            // 
-            chartArea5.Name = "ChartArea1";
-            this.graphicCH.ChartAreas.Add(chartArea5);
-            this.graphicCH.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend5.Name = "Legend1";
-            this.graphicCH.Legends.Add(legend5);
-            this.graphicCH.Location = new System.Drawing.Point(3, 3);
-            this.graphicCH.Name = "graphicCH";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.LegendText = "Сортировка Шелла";
-            series9.Name = "Series1";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Legend = "Legend1";
-            series10.LegendText = "Сортировка подсчетом";
-            series10.Name = "Series2";
-            this.graphicCH.Series.Add(series9);
-            this.graphicCH.Series.Add(series10);
-            this.graphicCH.Size = new System.Drawing.Size(635, 446);
-            this.graphicCH.TabIndex = 0;
-            this.graphicCH.Text = "chart1";
             // 
             // tableLayoutPanel2
             // 
@@ -188,16 +188,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Операции";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Заполнить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // ClearBTN
             // 
             this.ClearBTN.Location = new System.Drawing.Point(1, 62);
@@ -207,6 +197,16 @@
             this.ClearBTN.Text = "Очистить";
             this.ClearBTN.UseVisualStyleBackColor = true;
             this.ClearBTN.Click += new System.EventHandler(this.ClearBTN_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Заполнить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
@@ -222,16 +222,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Выбор Сортировки";
             // 
-            // ShellRBTN
+            // DemonstrateBTN
             // 
-            this.ShellRBTN.AutoSize = true;
-            this.ShellRBTN.Location = new System.Drawing.Point(1, 29);
-            this.ShellRBTN.Name = "ShellRBTN";
-            this.ShellRBTN.Size = new System.Drawing.Size(121, 17);
-            this.ShellRBTN.TabIndex = 0;
-            this.ShellRBTN.TabStop = true;
-            this.ShellRBTN.Text = "Сортировка Шелла";
-            this.ShellRBTN.UseVisualStyleBackColor = true;
+            this.DemonstrateBTN.Location = new System.Drawing.Point(1, 135);
+            this.DemonstrateBTN.Name = "DemonstrateBTN";
+            this.DemonstrateBTN.Size = new System.Drawing.Size(144, 23);
+            this.DemonstrateBTN.TabIndex = 3;
+            this.DemonstrateBTN.Text = "Демонстрация";
+            this.DemonstrateBTN.UseVisualStyleBackColor = true;
+            // 
+            // SortBTN
+            // 
+            this.SortBTN.Location = new System.Drawing.Point(1, 89);
+            this.SortBTN.Name = "SortBTN";
+            this.SortBTN.Size = new System.Drawing.Size(144, 23);
+            this.SortBTN.TabIndex = 2;
+            this.SortBTN.Text = "Отсортировать";
+            this.SortBTN.UseVisualStyleBackColor = true;
+            this.SortBTN.Click += new System.EventHandler(this.SortBTN_Click);
             // 
             // MoveRBTN
             // 
@@ -244,15 +252,16 @@
             this.MoveRBTN.Text = "Сортировка Подсчетом";
             this.MoveRBTN.UseVisualStyleBackColor = true;
             // 
-            // SortBTN
+            // ShellRBTN
             // 
-            this.SortBTN.Location = new System.Drawing.Point(1, 89);
-            this.SortBTN.Name = "SortBTN";
-            this.SortBTN.Size = new System.Drawing.Size(144, 23);
-            this.SortBTN.TabIndex = 2;
-            this.SortBTN.Text = "Отсортировать";
-            this.SortBTN.UseVisualStyleBackColor = true;
-            this.SortBTN.Click += new System.EventHandler(this.SortBTN_Click);
+            this.ShellRBTN.AutoSize = true;
+            this.ShellRBTN.Location = new System.Drawing.Point(1, 29);
+            this.ShellRBTN.Name = "ShellRBTN";
+            this.ShellRBTN.Size = new System.Drawing.Size(121, 17);
+            this.ShellRBTN.TabIndex = 0;
+            this.ShellRBTN.TabStop = true;
+            this.ShellRBTN.Text = "Сортировка Шелла";
+            this.ShellRBTN.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -267,16 +276,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Сравнение";
             // 
-            // KObmenRBTN
+            // SravBTN
             // 
-            this.KObmenRBTN.AutoSize = true;
-            this.KObmenRBTN.Location = new System.Drawing.Point(7, 30);
-            this.KObmenRBTN.Name = "KObmenRBTN";
-            this.KObmenRBTN.Size = new System.Drawing.Size(131, 17);
-            this.KObmenRBTN.TabIndex = 0;
-            this.KObmenRBTN.TabStop = true;
-            this.KObmenRBTN.Text = "Количество обменов";
-            this.KObmenRBTN.UseVisualStyleBackColor = true;
+            this.SravBTN.Location = new System.Drawing.Point(7, 101);
+            this.SravBTN.Name = "SravBTN";
+            this.SravBTN.Size = new System.Drawing.Size(138, 23);
+            this.SravBTN.TabIndex = 2;
+            this.SravBTN.Text = "Сравнить";
+            this.SravBTN.UseVisualStyleBackColor = true;
+            this.SravBTN.Click += new System.EventHandler(this.SravBTN_Click);
             // 
             // KSravRBTN
             // 
@@ -289,24 +297,16 @@
             this.KSravRBTN.Text = "Количество сравнений";
             this.KSravRBTN.UseVisualStyleBackColor = true;
             // 
-            // SravBTN
+            // KObmenRBTN
             // 
-            this.SravBTN.Location = new System.Drawing.Point(7, 101);
-            this.SravBTN.Name = "SravBTN";
-            this.SravBTN.Size = new System.Drawing.Size(138, 23);
-            this.SravBTN.TabIndex = 2;
-            this.SravBTN.Text = "Сравнить";
-            this.SravBTN.UseVisualStyleBackColor = true;
-            this.SravBTN.Click += new System.EventHandler(this.SravBTN_Click);
-            // 
-            // DemonstrateBTN
-            // 
-            this.DemonstrateBTN.Location = new System.Drawing.Point(1, 135);
-            this.DemonstrateBTN.Name = "DemonstrateBTN";
-            this.DemonstrateBTN.Size = new System.Drawing.Size(144, 23);
-            this.DemonstrateBTN.TabIndex = 3;
-            this.DemonstrateBTN.Text = "Демонстрация";
-            this.DemonstrateBTN.UseVisualStyleBackColor = true;
+            this.KObmenRBTN.AutoSize = true;
+            this.KObmenRBTN.Location = new System.Drawing.Point(7, 30);
+            this.KObmenRBTN.Name = "KObmenRBTN";
+            this.KObmenRBTN.Size = new System.Drawing.Size(131, 17);
+            this.KObmenRBTN.TabIndex = 0;
+            this.KObmenRBTN.TabStop = true;
+            this.KObmenRBTN.Text = "Количество обменов";
+            this.KObmenRBTN.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -320,8 +320,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.graphicCH)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

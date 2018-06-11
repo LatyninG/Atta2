@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BL;
+using DrawingTree;
 
 namespace Tree
 {
@@ -17,9 +18,9 @@ namespace Tree
         {
             InitializeComponent();
         }
-
+        MyTreeDraw mtd = new MyTreeDraw();
         MyTree tree = new MyTree();
-        DrawConfig dc = new DrawConfig();
+        DrawConfigTest dc = new DrawConfigTest();
         MessageBoxUtils mbu = new MessageBoxUtils();
 
         public void MyDraw()
@@ -29,7 +30,7 @@ namespace Tree
             dc.g.Clear(Color.Black);
             if (bitmap != null)
             {
-                bitmap = tree.DrawTree(tree.GetRoot(), 0, drawingPanel.Width, 20, 90, drawingPanel.Height);
+                bitmap = mtd.DrawTree(tree.GetRoot(), 0, drawingPanel.Width, 20, 90, drawingPanel.Height);
                 drawingPanel.CreateGraphics().DrawImage(bitmap, 0, 0);
             }
         }
