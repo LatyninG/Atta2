@@ -26,7 +26,7 @@ namespace BL
         {
             {HighLightType.Default, Brushes.DarkGreen },
             {HighLightType.Comprasion, Brushes.Yellow },
-            {HighLightType.Swap, Brushes.Bisque }
+            {HighLightType.Swap, Brushes.Red }
         };
 
         private static int Inner = 20;

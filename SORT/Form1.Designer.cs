@@ -46,7 +46,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DemonstrateBTN = new System.Windows.Forms.Button();
             this.SortBTN = new System.Windows.Forms.Button();
-            this.MoveRBTN = new System.Windows.Forms.RadioButton();
+            this.BubleRBTN = new System.Windows.Forms.RadioButton();
             this.ShellRBTN = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.SravBTN = new System.Windows.Forms.Button();
@@ -126,7 +126,7 @@
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.LegendText = "Сортировка подсчетом";
+            series1.LegendText = "Пузырьковая сортировка";
             series1.Name = "Series1";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -212,7 +212,7 @@
             // 
             this.groupBox2.Controls.Add(this.DemonstrateBTN);
             this.groupBox2.Controls.Add(this.SortBTN);
-            this.groupBox2.Controls.Add(this.MoveRBTN);
+            this.groupBox2.Controls.Add(this.BubleRBTN);
             this.groupBox2.Controls.Add(this.ShellRBTN);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(3, 103);
@@ -224,12 +224,13 @@
             // 
             // DemonstrateBTN
             // 
-            this.DemonstrateBTN.Location = new System.Drawing.Point(1, 135);
+            this.DemonstrateBTN.Location = new System.Drawing.Point(1, 137);
             this.DemonstrateBTN.Name = "DemonstrateBTN";
             this.DemonstrateBTN.Size = new System.Drawing.Size(144, 23);
             this.DemonstrateBTN.TabIndex = 3;
             this.DemonstrateBTN.Text = "Демонстрация";
             this.DemonstrateBTN.UseVisualStyleBackColor = true;
+            this.DemonstrateBTN.Click += new System.EventHandler(this.DemonstrateBTN_Click);
             // 
             // SortBTN
             // 
@@ -241,16 +242,16 @@
             this.SortBTN.UseVisualStyleBackColor = true;
             this.SortBTN.Click += new System.EventHandler(this.SortBTN_Click);
             // 
-            // MoveRBTN
+            // BubleRBTN
             // 
-            this.MoveRBTN.AutoSize = true;
-            this.MoveRBTN.Location = new System.Drawing.Point(1, 52);
-            this.MoveRBTN.Name = "MoveRBTN";
-            this.MoveRBTN.Size = new System.Drawing.Size(144, 17);
-            this.MoveRBTN.TabIndex = 1;
-            this.MoveRBTN.TabStop = true;
-            this.MoveRBTN.Text = "Сортировка Подсчетом";
-            this.MoveRBTN.UseVisualStyleBackColor = true;
+            this.BubleRBTN.AutoSize = true;
+            this.BubleRBTN.Location = new System.Drawing.Point(1, 52);
+            this.BubleRBTN.Name = "BubleRBTN";
+            this.BubleRBTN.Size = new System.Drawing.Size(157, 17);
+            this.BubleRBTN.TabIndex = 1;
+            this.BubleRBTN.TabStop = true;
+            this.BubleRBTN.Text = "Пузырьковая Сортировка";
+            this.BubleRBTN.UseVisualStyleBackColor = true;
             // 
             // ShellRBTN
             // 
@@ -348,7 +349,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button DemonstrateBTN;
         private System.Windows.Forms.Button SortBTN;
-        private System.Windows.Forms.RadioButton MoveRBTN;
+        private System.Windows.Forms.RadioButton BubleRBTN;
         private System.Windows.Forms.RadioButton ShellRBTN;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button SravBTN;

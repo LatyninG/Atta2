@@ -46,41 +46,21 @@ namespace BL
             }
         }
 
-        public void SortMove()
+        public void BubleSort()
         {
             Count_obm = 0; Count_srav = 0;
-            int[] cnt = new int[N];
-            int[] b = new int[N];
-            for (int i = 0; i < N; i++)
-            {
-                cnt[i] = 0;
-            }
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = i + 1; j < N; j++)
+            for (int i = 0; i < Arr.Length - 1; i++)
+                for (int j = Arr.Length - 1; j > i; j--)
                 {
+                    Count_srav++;
                     if (Arr[i] > Arr[j])
                     {
-                        cnt[i] = cnt[i] + 1;
+                        int t = Arr[i];
+                        Arr[i] = Arr[j];
+                        Arr[j] = t;
                     }
-                    else
-                    {
-                        cnt[j] = cnt[j] + 1;
-                    }
-                    Count_srav++;
                     Count_obm++;
                 }
-            }
-            for (int i = 0; i < N; i++)
-            {
-                b[cnt[i]] = Arr[i];
-                Count_obm++;
-            }
-            for (int i = 0; i < N; i++)
-            {
-                Arr[i] = b[i];
-                Count_obm++;
-            }
         }
 
         public int ReturnSrav()

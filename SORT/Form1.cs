@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BL;
+using System.Collections.Generic;
 
 namespace SORT
 {
     public partial class Form1 : Form
     {
         int[] draw_Arr;
+
+        DoubleLinkedListNode<Bitmap> _currentFrame;
 
         public Form1()
         {
@@ -85,9 +88,9 @@ namespace SORT
                 ClearDGV(DGV);
                 ArrToDGV(arr,DGV);
             }
-            if (MoveRBTN.Checked)
+            if (BubleRBTN.Checked)
             {
-                sort.SortMove();
+                sort.BubleSort();
                 ClearDGV(DGV);
                 ArrToDGV(arr, DGV);
             }
@@ -115,7 +118,7 @@ namespace SORT
                     SortBL sort = new SortBL(tempArr.Length, tempArr);
                     sort.SortShell();
                     graphicCH.Series[1].Points.AddXY(i, sort.ReturnObm());
-                    sort.SortMove();
+                    sort.BubleSort();
                     graphicCH.Series[0].Points.AddXY(i, sort.ReturnObm());
                 }
             }
@@ -130,9 +133,56 @@ namespace SORT
                     SortBL sort = new SortBL(tempArr.Length, tempArr);
                     sort.SortShell();
                     graphicCH.Series[1].Points.AddXY(i, sort.ReturnSrav());
-                    sort.SortMove();
+                    sort.BubleSort();
                     graphicCH.Series[0].Points.AddXY(i, sort.ReturnSrav());
                 }
+            }
+        }
+
+        private void DemonstrateBTN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ShellRBTN.Checked)
+                {
+                    int[] demonstrate_Arr = draw_Arr;
+
+                    SorterTest.ShellSortRender(drawingPanel.Width, drawingPanel.Height, demonstrate_Arr, out SortReport report);
+
+                    _currentFrame = report.Frames.First;
+
+                    while (_currentFrame != null)
+                    {
+                        drawingPanel.CreateGraphics().DrawImage(_currentFrame.Value, 0, 0);
+                        System.Threading.Thread.Sleep(500);
+
+                        _currentFrame = _currentFrame.Next;
+                    }
+
+                    ArrToDGV(demonstrate_Arr, DGV);
+                }
+                if (BubleRBTN.Checked)
+                {
+                    int[] demonstrate_Arr = draw_Arr;
+
+                    SorterTest.BubleSortRender(drawingPanel.Width, drawingPanel.Height, demonstrate_Arr, out SortReport report);
+
+                    _currentFrame = report.Frames.First;
+
+                    while (_currentFrame != null)
+                    {
+                        drawingPanel.CreateGraphics().DrawImage(_currentFrame.Value, 0, 0);
+                        System.Threading.Thread.Sleep(500);
+
+                        _currentFrame = _currentFrame.Next;
+                    }
+
+                    ArrToDGV(demonstrate_Arr, DGV);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Проверьте корректность ваших данных.");
             }
         }
     }

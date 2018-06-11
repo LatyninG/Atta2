@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayUtils.cs" />
+    <Compile Include="DoubleLinkedList.cs" />
+    <Compile Include="DoubleLinkedListNode.cs" />
     <Compile Include="MessageBoxUtils.cs" />
     <Compile Include="MyQueue.cs" />
     <Compile Include="MyTree.cs" />
@@ -51,6 +53,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderer.cs" />
     <Compile Include="SortBL.cs" />
+    <Compile Include="SorterTest.cs" />
+    <Compile Include="SortReport.cs" />
     <Compile Include="TF.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
